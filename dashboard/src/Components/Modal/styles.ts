@@ -68,10 +68,65 @@ export const CloseIcon = styled(CloseOutline)`
 `;
 
 export const NewEmployeeContainer = styled.div`
-  width: 70%;
+  width: auto;
   height: 80%;
   border-radius: 10px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem 1rem;
+  gap: 1rem;
+
   box-shadow: 0 0 6px 0 #d4d3d3;
   background-color: ${Colors.LightGray};
+`;
+
+export const RadioContainer = styled.div`
+  width: 50%;
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  label {
+    font-size: 1rem;
+    font-family: "Roboto Flex", sans-serif;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-family: "Roboto Flex", sans-serif;
+  }
+
+  div {
+    gap: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const Row = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1rem;
+`;
+
+export const StyledButton = styled.button`
+  width: 120px;
+  padding: 1rem;
+  border: 1px solid black;
+
+  border-radius: 10px;
+
+  font-size: 1rem;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 `;
